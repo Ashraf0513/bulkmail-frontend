@@ -31,7 +31,7 @@ function App(){
 
  function handlesend(){
     setstatus(true)
-    axios.post("https://bulkmail-frontend-ashen.vercel.app/sendemail",{msg:msg,emaillist:emaillist}).then(function(data){
+    axios.post("https://bulkmail-backend-lime.vercel.app/sendemail",{msg:msg,emaillist:emaillist}).then(function(data){
       if(data.data === true){
         alert("Email sent Successfully")
         setstatus(false)
